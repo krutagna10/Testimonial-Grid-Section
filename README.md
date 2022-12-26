@@ -1,4 +1,4 @@
-# Testimonials grid section solution
+# Frontend Mentor - Testimonial Grid Section
 
 ### Screenshot
 
@@ -11,7 +11,11 @@
 ### Built with
 
 - HTML
-- CSS 
+- CSS
 - Vanilla Javascript
+
+## Author
+
+- Frontend Mentor - [@krutagna10](https://www.frontendmentor.io/profile/krutagna10)
 
 
