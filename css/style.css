@@ -1,25 +1,12 @@
 :root {
     --font-barlow-semi: 'Barlow Semi Condensed', sans-serif;
 
-    /* Primary Colors */
-    --moderate-violet: hsl(263, 55%, 52%);
-    --very-dark-grayish-blue: hsl(217, 19%, 35%);
-    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    /* Colors */
     --white: hsl(0, 0%, 100%);
-
-    /* Neutral Colors */
-    --light-gray: hsl(0, 0%, 81%);
-    --light-grayish-blue: hsl(210 46% 95%);
-    --gradient-light: linear-gradient(111.34deg, #F6F9FB 0%, #CCDDEE 100%);
-
-    /* Dark mode colours */
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
     --gradient-dark: linear-gradient(180deg, #293343 0%, #1d1f31 100%);
     --dark-grey: rgb(61, 51, 85);
     --gradient-green: linear-gradient(180deg, #32ebc9 0%, rgba(52, 215, 185, 0.9) 100%)
-}
-
-.dark-mode--active {
-    --gradient-light: linear-gradient(180deg, #293343 0%, #1d1f31 100%);
 }
 
 /* css Reset */
@@ -40,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background: var(--gradient-light);
+    background: var(--gradient-dark);
     position: relative;
 }
 
@@ -99,7 +86,7 @@ body {
 }
 
 .testimonial--daniel {
-    background-color: var(--moderate-violet);
+    background: linear-gradient(180deg, #21e8c4 0%, rgba(21, 183, 153, 0.9) 100%);
 }
 
 .testimonial--jonathan {
@@ -107,31 +94,19 @@ body {
 }
 
 .testimonial--jeanette {
+    background: linear-gradient(180deg, #9357F5 0%, rgba(131, 55, 255, 0.81) 100%);
+    color: white;
     font-size: 1.4rem;
 }
 
 .testimonial--patrick {
-    background-color: var(--very-dark-blackish-blue);
+    background-image: linear-gradient(to right, #434343 0%, rgba(0, 0, 0, 0.85) 100%);
 }
 
-
-.testimonial--jeanette,
 .testimonial--kira {
-    background-color: var(--white);
-    color: var(--very-dark-grayish-blue);
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    color: white;
 }
-
-.testimonial__person-pos--jeanette,
-.testimonial__person-pos--kira {
-    opacity: 70%;
-}
-
-.testimonial__text--jeanette,
-.testimonial__text--kira {
-    opacity: 70%;
-}
-
-
 
 /* Above 576 pixels */
 @media (min-width: 36em) {
@@ -177,64 +152,13 @@ body {
 
         grid-template-areas:
                 'daniel daniel jonathan kira'
-                'jeanette patrick patrick kira'
+                'jeanette patrick patrick kira';
     }
 }
 
-/* Dark Mode */
-.icon {
-    display: block;
-    font-size: 2.2rem;
-    position: absolute;
-    right: 2rem;
-    top: 1.5rem;
-    cursor: pointer;
-}
 
 
-.icon__light-mode {
-    display: none;
-}
 
-.dark-mode--active .icon__dark-mode {
-    display: none;
-}
-
-.icon__dark-mode:hover {
-    color: rgb(107, 19, 107);
-}
-
-.dark-mode--active .icon__light-mode {
-    display: block;
-    color: white;
-}
-
-.icon__light-mode:hover {
-    color: orange;
-}
-
-.dark-mode--active .testimonial {
-    box-shadow: rgba(255, 255, 255, 0.1) 1px 2px 5px;
-}
-
-.dark-mode--active .testimonial--daniel {
-    background: linear-gradient(180deg, #21e8c4 0%, rgba(21, 183, 153, 0.9) 100%);
-}
-
-.dark-mode--active .testimonial--kira {
-    background-image: linear-gradient(to right, #141e30, #243b55);
-    color: white;
-}
-
-.dark-mode--active .testimonial--patrick {
-    background-image: linear-gradient(to right, #434343 0%, rgba(0, 0, 0, 0.85) 100%);
-}
-
-.dark-mode--active .testimonial--jeanette {
-    background: linear-gradient(180deg, #9357F5 0%, rgba(131, 55, 255, 0.81) 100%);
-    color: white;
-
-}
 
 
 
