@@ -34,6 +34,7 @@ body {
 
 .testimonials-section {
     padding: 3.6rem 0;
+    grid-auto-columns: 1fr;
 }
 
 .testimonial {
@@ -111,7 +112,6 @@ body {
 /* Above 576 pixels */
 @media (min-width: 36em) {
     .testimonials-section {
-        grid-template-columns: 1fr 1fr;
         gap: 2.4rem;
 
         grid-template-areas:
@@ -145,7 +145,6 @@ body {
 /* Media Queries*/
 @media (min-width: 56em) {
     .testimonials-section {
-        grid-template-columns: repeat(4, 1fr);
         gap: 2.4rem;
         max-width: 110rem;
         margin: 3.2rem;
